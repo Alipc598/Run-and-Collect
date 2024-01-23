@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: af42ab8d31f847d40bda517f9829a16d,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 5c9c2c4052e942447b0a365b07cef112,
     type: 2}
 --- !u!196 &4
@@ -401,6 +402,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 981b35e3b087d184b917306d5dee974f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 981b35e3b087d184b917306d5dee974f, type: 3}
@@ -734,6 +740,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8085d69e9dc11b24ea919e0b0a7698a1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8085d69e9dc11b24ea919e0b0a7698a1, type: 3}
 --- !u!1 &418829268 stripped
@@ -847,6 +858,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 69683f2302e98cb45a8214a085991813,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69683f2302e98cb45a8214a085991813, type: 3}
 --- !u!1 &504663023
@@ -860,7 +876,6 @@ GameObject:
   - component: {fileID: 504663027}
   - component: {fileID: 504663024}
   - component: {fileID: 504663026}
-  - component: {fileID: 504663025}
   m_Layer: 0
   m_Name: Second Camera
   m_TagString: MainCamera
@@ -911,14 +926,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &504663025
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504663023}
-  m_Enabled: 1
 --- !u!124 &504663026
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1084,6 +1091,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bbfd9d1520e4422468dea1d3ca402838,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbfd9d1520e4422468dea1d3ca402838, type: 3}
 --- !u!1001 &623344252
@@ -1096,6 +1108,10 @@ PrefabInstance:
     - target: {fileID: 1822941547610528, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
       propertyPath: m_Name
       value: platformSlice (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822941547610528, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4281312682134286, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
       propertyPath: m_RootOrder
@@ -1196,6 +1212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platformSliceLong (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1983207307996502, guid: bab0a915c548a9541a2b963ef56031a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4153654519600652, guid: bab0a915c548a9541a2b963ef56031a6, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -1292,6 +1312,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1047580597285932, guid: c17aa95cc423fb247a005ab1e3790fa5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4066774734645876, guid: c17aa95cc423fb247a005ab1e3790fa5, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -1483,6 +1507,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8085d69e9dc11b24ea919e0b0a7698a1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8085d69e9dc11b24ea919e0b0a7698a1, type: 3}
@@ -1775,6 +1804,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 400fd3fef5f1d174bb4054e0c96794fa,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 400fd3fef5f1d174bb4054e0c96794fa, type: 3}
 --- !u!1 &1083374483
@@ -1926,6 +1960,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platformSliceLong (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1983207307996502, guid: bab0a915c548a9541a2b963ef56031a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4153654519600652, guid: bab0a915c548a9541a2b963ef56031a6, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -2056,6 +2094,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 69683f2302e98cb45a8214a085991813,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69683f2302e98cb45a8214a085991813, type: 3}
@@ -2294,6 +2337,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 981b35e3b087d184b917306d5dee974f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 981b35e3b087d184b917306d5dee974f, type: 3}
 --- !u!1001 &1257017780
@@ -2355,6 +2403,10 @@ PrefabInstance:
     - target: {fileID: 1822941547610528, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
       propertyPath: m_Name
       value: platformSlice (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822941547610528, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4281312682134286, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
       propertyPath: m_RootOrder
@@ -2701,6 +2753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platformSlice (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1822941547610528, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4281312682134286, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -2958,6 +3014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: platformSlice (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1822941547610528, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4281312682134286, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -3092,6 +3152,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8085d69e9dc11b24ea919e0b0a7698a1,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8085d69e9dc11b24ea919e0b0a7698a1, type: 3}
@@ -3253,6 +3318,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1983207307996502, guid: bab0a915c548a9541a2b963ef56031a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4153654519600652, guid: bab0a915c548a9541a2b963ef56031a6, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -3302,6 +3371,10 @@ PrefabInstance:
     - target: {fileID: 1822941547610528, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
       propertyPath: m_Name
       value: platformSlice (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1822941547610528, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4281312682134286, guid: c650de25e93f5c14eb8b0d61ab0d3bb3, type: 3}
       propertyPath: m_RootOrder
@@ -3509,7 +3582,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

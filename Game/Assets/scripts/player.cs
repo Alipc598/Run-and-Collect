@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.IO;
+
 
 public class player : MonoBehaviour {
     public GameObject pausePanel;
@@ -113,8 +115,29 @@ public class player : MonoBehaviour {
     //progressing levels
     void nextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
+
+        // Assuming "LoadingScene" is not directly after the last gameplay level in the build index order
+        if (nextSceneIndex >= SceneManager.sceneCountInBuildSettings - 1)
+        {
+            nextSceneIndex = 0; // Loop back to the first scene (menu) or set to a specific scene that you want to load after the last level
+        }
+
+        string nextScenePath = SceneUtility.GetScenePathByBuildIndex(nextSceneIndex);
+        string nextSceneName = Path.GetFileNameWithoutExtension(nextScenePath);
+
+        Debug.Log("Current scene index: " + currentSceneIndex);
+        Debug.Log("Next scene index: " + nextSceneIndex);
+        Debug.Log("Setting next scene to: " + nextSceneName);
+
+        // Set the PlayerPrefs for the next gameplay scene
+        PlayerPrefs.SetString("NextScene", nextSceneName);
+        // Load the LoadingScene
+        SceneManager.LoadScene("LoadingScene");
     }
+
+
 
     void OnCollisionEnter(Collision col)
     {
@@ -187,9 +210,21 @@ public class player : MonoBehaviour {
         else if (trig.gameObject.tag == "Goal" && score >= 5)    //requires all score pickups
         {
             Destroy(trig.gameObject);
-            StartCoroutine(roundEnded());
+            StartCoroutine(TransitionToEndOfLevel());
         }
     }
+
+    IEnumerator TransitionToEndOfLevel()
+    {
+        audioSource.PlayOneShot(roundEndSound);
+        anim.Play("Win", -1, 0f);
+        yield return new WaitForSeconds(3);
+
+        // Transition to the next level through the loading screen
+        nextLevel();
+    }
+
+
 
     void setScoreText()
     {
@@ -244,10 +279,12 @@ public class player : MonoBehaviour {
     IEnumerator roundEnded()
     {
         audioSource.PlayOneShot(roundEndSound);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1); // Wait for the end round sound to play
         anim.Play("Win", -1, 0f);
-        Invoke("nextLevel", 3f);
+        yield return new WaitForSeconds(3); // Wait for the win animation to play
+        nextLevel(); // Call the nextLevel method directly
     }
+
 
     IEnumerator checkPointSoundPlay()
     {
