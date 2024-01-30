@@ -207,7 +207,7 @@ public class player : MonoBehaviour {
         transform.position = spawnPos;
         transform.rotation = spawnRot;
         rb.velocity = Vector3.zero; // Resetting velocity
-        //anim.Play("Respawn", -1, 0f); // Play respawn animation, if you have one
+        anim.Play("Lose", -1, 0f); // Play Lose animation
     }
 
 
